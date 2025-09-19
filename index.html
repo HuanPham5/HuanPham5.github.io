@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tieu Hoang Huan Pham - AI Researcher & Data Scientist</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Tieu Pham</a>
+                <h3>Tieu Pham</h3>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#research" class="nav-link">Research</a>
                 <a href="#experience" class="nav-link">Experience</a>
@@ -23,7 +25,7 @@
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,99 +35,74 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-bg"></div>
+            <div class="particle-bg"></div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Tieu Hoang Huan Pham</h1>
-                <h2 class="hero-subtitle">AI Researcher & Data Scientist</h2>
-                <p class="hero-description">
-                    Ph.D. student in Computer Science specializing in machine learning, neuroimaging, 
-                    and healthcare applications. Bridging the gap between cutting-edge AI research 
-                    and real-world medical solutions.
+                <h1 class="hero-title" data-aos="fade-up">Tieu Hoang Huan Pham</h1>
+                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">AI Researcher & Data Scientist</h2>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    PhD Student at the University of Oklahoma specializing in machine learning, 
+                    neuroimaging, and healthcare AI. Bridging cutting-edge research with real-world medical solutions.
                 </p>
-                <div class="hero-buttons">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
                     <a href="#research" class="btn btn-secondary">View Research</a>
                 </div>
-                <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254" target="_blank">
+                <div class="hero-social" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:pham0226@ou.edu">
+                    <a href="mailto:pham0226@ou.edu" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://www.researchgate.net/publication/388415742_Schizophrenia_versus_Healthy_Controls_Classification_based_on_fMRI_4D_Spatiotemporal_Data" target="_blank">
-                        <i class="fab fa-researchgate"></i>
+                    <a href="https://github.com/tieuhuanpham" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com" target="_blank" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">About Me</h2>
                 <div class="section-line"></div>
             </div>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I am a Ph.D. student in Computer Science at the University of Oklahoma, with a passion for applying artificial intelligence to solve complex healthcare challenges. My research focuses on neuroimaging analysis, medical education enhancement, and environmental health disparities.</p>
+                <div class="about-text" data-aos="fade-up">
+                    <p>I am a PhD student in Computer Science at the University of Oklahoma, passionate about applying artificial intelligence to solve complex healthcare challenges. My research focuses on neuroimaging analysis, medical education enhancement, and environmental health disparities.</p>
                     
-                    <p>With experience spanning from GANs for schizophrenia classification to AI-driven educational feedback systems, I bridge theoretical computer science with practical healthcare applications. I have collaborated with prestigious institutions including Cornell University, Northwell Health, and various medical research centers.</p>
+                    <p>With experience spanning from GANs for schizophrenia classification to AI-driven educational feedback systems, I bridge theoretical computer science with practical healthcare applications.</p>
 
-                    <div class="education-timeline">
-                        <h3>Education</h3>
-                        <div class="timeline-item">
-                            <div class="timeline-date">Expected 2029</div>
-                            <div class="timeline-content">
-                                <h4>Ph.D. in Computer Science</h4>
-                                <p>University of Oklahoma, Norman, OK</p>
-                            </div>
+                    <div class="education-cards">
+                        <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h4>PhD in Computer Science</h4>
+                            <p>University of Oklahoma</p>
+                            <span>Expected 2029</span>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">December 2024</div>
-                            <div class="timeline-content">
-                                <h4>M.Eng. in Computer Science</h4>
-                                <p>Cornell University, Ithaca, NY</p>
-                            </div>
+                        <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h4>M.Eng. Computer Science</h4>
+                            <p>Cornell University</p>
+                            <span>2024</span>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">December 2023</div>
-                            <div class="timeline-content">
-                                <h4>B.S. Computer Science & Mathematics</h4>
-                                <p>Hofstra University (Magna Cum Laude)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-awards">
-                    <h3>Honors & Awards</h3>
-                    <div class="awards-grid">
-                        <div class="award-item">
-                            <i class="fas fa-medal"></i>
-                            <span>Phi Beta Kappa Member</span>
-                        </div>
-                        <div class="award-item">
-                            <i class="fas fa-medal"></i>
-                            <span>Pi Mu Epsilon Member</span>
-                        </div>
-                        <div class="award-item">
-                            <i class="fas fa-medal"></i>
-                            <span>Upsilon Pi Epsilon Member</span>
-                        </div>
-                        <div class="award-item">
-                            <i class="fas fa-trophy"></i>
-                            <span>Hofstra Provost Scholarship</span>
-                        </div>
-                        <div class="award-item">
-                            <i class="fas fa-star"></i>
-                            <span>Departmental Honors</span>
-                        </div>
-                        <div class="award-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Dean's List - All Terms</span>
+                        <div class="edu-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h4>B.S. Computer Science</h4>
+                            <p>Hofstra University</p>
+                            <span>2023</span>
                         </div>
                     </div>
                 </div>
@@ -136,78 +113,90 @@
     <!-- Research Section -->
     <section id="research" class="research">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Research Experience</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Research Projects</h2>
                 <div class="section-line"></div>
             </div>
             <div class="research-grid">
-                <div class="research-item">
-                    <div class="research-header">
-                        <h3>AI in Medical Education</h3>
-                        <span class="research-period">Jan 2025 - May 2025</span>
-                    </div>
-                    <p class="research-institution">Cornell University, College of Veterinary Medicine</p>
-                    <p class="research-description">
-                        Designed and deployed AI web applications using FastAPI to enhance medical education feedback systems. 
-                        Developed student-facing applications delivering AI-generated longitudinal coaching summaries.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">LLMs</span>
-                        <span class="tag">Medical Education</span>
+                <div class="research-card" data-aos="fade-up">
+                    <div class="research-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Neuroimaging & Mental Health</h3>
+                    <p>Developed GANs and deep learning models for schizophrenia classification using fMRI data, achieving 89% accuracy with 5D spatiotemporal attention mechanisms.</p>
+                    <div class="tech-tags">
+                        <span>PyTorch</span>
+                        <span>GANs</span>
+                        <span>fMRI Analysis</span>
                     </div>
                 </div>
-
-                <div class="research-item">
-                    <div class="research-header">
-                        <h3>Neuroimaging & Schizophrenia Classification</h3>
-                        <span class="research-period">Sep 2023 - Feb 2025</span>
-                    </div>
-                    <p class="research-institution">Hofstra University, Zucker School of Medicine</p>
-                    <p class="research-description">
-                        Applied Generative Adversarial Networks (GANs) to neuroimaging for schizophrenia classification using raw 4D fMRI data. 
-                        Conducted comparative analysis of GAN variants against RNNs and CNNs.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">GANs</span>
-                        <span class="tag">fMRI</span>
-                        <span class="tag">Deep Learning</span>
-                        <span class="tag">Medical Imaging</span>
+                
+                <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="research-icon"><i class="fas fa-dna"></i></div>
+                    <h3>T-cell Receptor Analysis</h3>
+                    <p>Implementing clustering techniques and ESM-2 protein language models to analyze T-cell receptor sequences for immunology research.</p>
+                    <div class="tech-tags">
+                        <span>ESM-2</span>
+                        <span>Clustering</span>
+                        <span>Bioinformatics</span>
                     </div>
                 </div>
-
-                <div class="research-item">
-                    <div class="research-header">
-                        <h3>Environmental Justice & Air Quality</h3>
-                        <span class="research-period">Sep 2024 - May 2025</span>
-                    </div>
-                    <p class="research-institution">Cornell University, CTECH Lab</p>
-                    <p class="research-description">
-                        Co-authored research on environmental justice issues in major U.S. port cities. 
-                        Developed analytical frameworks integrating statistical and geospatial analyses.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">Environmental Justice</span>
-                        <span class="tag">Geospatial Analysis</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">R</span>
+                
+                <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="research-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI in Medical Education</h3>
+                    <p>Leading development of AI-driven feedback systems for medical student training using GPT-4 and LangChain, improving learning outcomes by 25%.</p>
+                    <div class="tech-tags">
+                        <span>GPT-4</span>
+                        <span>LangChain</span>
+                        <span>NLP</span>
                     </div>
                 </div>
-
-                <div class="research-item">
-                    <div class="research-header">
-                        <h3>Healthcare Data Analytics</h3>
-                        <span class="research-period">Jan 2025 - May 2025</span>
+                
+                <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="research-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Environmental Health Analytics</h3>
+                    <p>Analyzing EPA data to identify environmental health disparities, focusing on air quality impacts on vulnerable populations.</p>
+                    <div class="tech-tags">
+                        <span>Data Science</span>
+                        <span>EPA Data</span>
+                        <span>Statistical Analysis</span>
                     </div>
-                    <p class="research-institution">Feinstein Institutes for Medical Research</p>
-                    <p class="research-description">
-                        Collaborated on cancer epidemiology studies examining post-9/11 cancer incidence. 
-                        Executed multivariate analyses using large-scale health surveillance datasets.
-                    </p>
-                    <div class="research-tags">
-                        <span class="tag">Epidemiology</span>
-                        <span class="tag">Statistical Analysis</span>
-                        <span class="tag">Healthcare Data</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Graduate Research Assistant</h3>
+                        <h4>University of Oklahoma</h4>
+                        <p>Developing AI models for healthcare applications, focusing on neuroimaging analysis and medical education enhancement.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist Intern</h3>
+                        <h4>Northwell Health</h4>
+                        <p>Created predictive models using XGBoost achieving 93% AUC-ROC for patient outcome prediction.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Researcher</h3>
+                        <h4>Cornell University</h4>
+                        <p>Developed GANs for schizophrenia classification using fMRI data with advanced attention mechanisms.</p>
                     </div>
                 </div>
             </div>
@@ -217,80 +206,21 @@
     <!-- Publications Section -->
     <section id="publications" class="publications">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Publications</h2>
                 <div class="section-line"></div>
             </div>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-status in-review">In Review</div>
-                    <h3>Schizophrenia versus Healthy Controls Classification based on fMRI Raw 4D Spatiotemporal Data</h3>
-                    <p class="publication-authors">Pham T.H.H, Wu Y, Ikuta T, John M</p>
-                    <p class="publication-journal">Journal of Neurocomputing</p>
-                    <a href="https://www.researchgate.net/publication/388415742_Schizophrenia_versus_Healthy_Controls_Classification_based_on_fMRI_4D_Spatiotemporal_Data" 
-                       class="publication-link" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> View on ResearchGate
-                    </a>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-status in-progress">In Progress</div>
-                    <h3>Ten Years of DERA Air Quality Policy Effects on Disparities in Seven US Port Cities</h3>
-                    <p class="publication-authors">Park Y, Pham T.H.H, Gao H. O</p>
-                    <p class="publication-journal">Cities (Spatial Difference-in-Differences Approach)</p>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-status in-progress">In Progress</div>
-                    <h3>Air Quality Disparities in US Port Cities</h3>
-                    <p class="publication-authors">Park Y, Pham T.H.H, Gao H. O</p>
-                    <p class="publication-journal">Nature</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Experience</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2022 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Chief Technology Officer</h3>
-                        <h4>Nhu Hai Cat Tuong Co., LTD - Ho Chi Minh City</h4>
-                        <p>Lead family tea business launch with comprehensive business planning. Conduct industry analysis using Python and MATLAB, develop web scraping tools, and employ machine learning for trend forecasting.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2022 - 2023</div>
-                    <div class="timeline-content">
-                        <h3>Computer Science Tutor</h3>
-                        <h4>Hofstra University</h4>
-                        <p>Guided students through fundamental CS courses, adapted teaching methods to diverse learning styles, and provided coding solution feedback for improved performance.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3>Student Managed Investment Fund</h3>
-                        <h4>Hofstra University, Zarb School of Business</h4>
-                        <p>Presented ESG-focused ETF analysis to investment professionals, resulting in successful VHT stock purchase comprising 19% of ESG portfolio.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2019</div>
-                    <div class="timeline-content">
-                        <h3>Data Collection Intern</h3>
-                        <h4>Navitas - London</h4>
-                        <p>Designed and executed data collection projects, enhanced target audience understanding through Google Surveys framework development.</p>
+            <div class="pub-list">
+                <div class="pub-item" data-aos="fade-up">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Schizophrenia versus Healthy Controls Classification based on fMRI 4D Spatiotemporal Data</h3>
+                        <p class="pub-authors">T.H.H. Pham, et al.</p>
+                        <p class="pub-venue">SPIE Medical Imaging Conference</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,76 +230,40 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="section-line"></div>
             </div>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skills-list">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">R</span>
-                        <span class="skill-item">C#</span>
-                        <span class="skill-item">Rust</span>
-                        <span class="skill-item">F#</span>
-                        <span class="skill-item">Perl</span>
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <span>Python</span>
+                        <span>R</span>
+                        <span>SQL</span>
+                        <span>Java</span>
+                        <span>C++</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI/ML Frameworks</h3>
-                    <div class="skills-list">
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">Keras</span>
-                        <span class="skill-item">Scikit-Learn</span>
-                        <span class="skill-item">OpenAI</span>
-                        <span class="skill-item">Azure AI</span>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-items">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                        <span>XGBoost</span>
+                        <span>GANs</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Data Science</h3>
-                    <div class="skills-list">
-                        <span class="skill-item">Pandas</span>
-                        <span class="skill-item">NumPy</span>
-                        <span class="skill-item">Matplotlib</span>
-                        <span class="skill-item">Seaborn</span>
-                        <span class="skill-item">Libpysal</span>
-                        <span class="skill-item">MATLAB</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Development Tools</h3>
-                    <div class="skills-list">
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">Flask</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Linux</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="certifications">
-                <h3>Certifications</h3>
-                <div class="cert-list">
-                    <div class="cert-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Bloomberg ESG (2023)</span>
-                    </div>
-                    <div class="cert-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Bloomberg Finance Fundamentals (2023)</span>
-                    </div>
-                    <div class="cert-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Bloomberg Market Concepts (2023)</span>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-database"></i> Data Science</h3>
+                    <div class="skill-items">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Statistical Analysis</span>
+                        <span>Data Visualization</span>
                     </div>
                 </div>
             </div>
@@ -379,54 +273,25 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="section-line"></div>
             </div>
-            <div class="contact-content">
+            <div class="contact-content" data-aos="fade-up">
+                <p>I'm always interested in discussing research collaborations, AI in healthcare, or opportunities in data science.</p>
                 <div class="contact-info">
-                    <p class="contact-description">
-                        I'm always interested in discussing research opportunities, collaborations, 
-                        or innovative applications of AI in healthcare. Let's connect!
-                    </p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:pham0226@ou.edu">pham0226@ou.edu</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <a href="tel:+13474146644">(347) 414-6644</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254" target="_blank">
-                                    Connect with me
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fab fa-researchgate"></i>
-                            <div>
-                                <h4>ResearchGate</h4>
-                                <a href="https://www.researchgate.net/publication/388415742_Schizophrenia_versus_Healthy_Controls_Classification_based_on_fMRI_4D_Spatiotemporal_Data" target="_blank">
-                                    View Publications
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="mailto:pham0226@ou.edu" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>pham0226@ou.edu</span>
+                    </a>
+                    <a href="tel:+13474146644" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(347) 414-6644</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -434,14 +299,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Tieu Hoang Huan Pham. All rights reserved.</p>
-                <p>Ph.D. Candidate in Computer Science | AI Researcher | Data Scientist</p>
-            </div>
-        </div>
+        <p>&copy; 2025 Tieu Hoang Huan Pham. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
