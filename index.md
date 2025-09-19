@@ -18,6 +18,6 @@ I'm a PhD student in Computer Science at the University of Oklahoma, passionate 
 ## Recent News
 - **August 2025**: Started PhD at University of Oklahoma
 - **Dec 2024**: Completed M.Eng. at Cornell University
-- **Dec 2024**: Completed B.S. (honors with distinction) at Hofstra University
+- **Dec 2023**: Completed B.S. (honors with distinction) at Hofstra University
 
 [View Full CV →](/assets/pdf/CV.pdf){:target="_blank" .btn .btn--primary}
