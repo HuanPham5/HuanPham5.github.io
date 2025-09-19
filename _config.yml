@@ -8,10 +8,10 @@ title: "Tieu Hoang Huan Pham"
 title_separator: "-"
 subtitle: "AI Researcher & Data Scientist"
 name: "Tieu Hoang Huan Pham"
-description: "PhD Student at University of Oklahoma specializing in machine learning, neuroimaging, and healthcare AI"
-url: "https://tieuhuanpham.github.io"
+description: "PhD Student at University of Oklahoma specializing in machine learning application in bioinformatics"
+url: "https://huanpham5.github.io/"
 baseurl: ""
-repository: "tieuhuanpham/tieuhuanpham.github.io"
+repository: "HuanPham5/HuanPham5.github.io"
 
 # Site Author
 author:
@@ -29,10 +29,10 @@ author:
       url: "https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/tieuhuanpham"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "#" # Add your Google Scholar link
+      url: "https://github.com/HuanPham5"
+    # - label: "Google Scholar"
+    #   icon: "fas fa-fw fa-graduation-cap"
+    #   url: "#" # Add your Google Scholar link
 
 # Site Footer
 footer:
@@ -42,7 +42,7 @@ footer:
       url: "https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/tieuhuanpham"
+      url: "https://github.com/HuanPham5"
 
 # Reading Files
 include:
