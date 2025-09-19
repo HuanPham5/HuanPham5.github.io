@@ -1,0 +1,103 @@
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale: "en-US"
+title: "Tieu Hoang Huan Pham"
+title_separator: "-"
+subtitle: "AI Researcher & Data Scientist"
+name: "Tieu Hoang Huan Pham"
+description: "PhD Student at University of Oklahoma specializing in machine learning, neuroimaging, and healthcare AI"
+url: "https://tieuhuanpham.github.io"
+baseurl: ""
+repository: "tieuhuanpham/tieuhuanpham.github.io"
+
+# Site Author
+author:
+  name: "Tieu Hoang Huan Pham"
+  avatar: "/assets/images/avatar.jpg" # Add your photo
+  bio: "PhD Student in Computer Science at University of Oklahoma. Specializing in AI for healthcare, neuroimaging analysis, and medical education."
+  location: "Norman, OK"
+  email: "pham0226@ou.edu"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pham0226@ou.edu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tieuhuanpham"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "#" # Add your Google Scholar link
+
+# Site Footer
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tieuhuanpham"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Analytics (optional)
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "YOUR-GA-ID"
+    anonymize_ip: false
