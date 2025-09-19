@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 
-# Introduction
+## Introduction
 
 I'm a PhD student in Computer Science at the University of Oklahoma, passionate about applying artificial intelligence to solve complex healthcare challenges. My research focuses on neuroimaging analysis, medical education enhancement, environmental health disparities and bioinformatics.
 
