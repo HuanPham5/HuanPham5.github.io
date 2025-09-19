@@ -49,5 +49,5 @@ plugins:
 # Pagination
 paginate: 5
 
-# Analytics (optional)
-google_analytics: "YOUR-GA-ID"
+gtag:
+  tracking_id: "G-XXXXXXXXXX"
