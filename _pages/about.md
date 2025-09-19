@@ -7,15 +7,14 @@ title: "About"
 
 **PhD in Computer Science** (Expected 2029)  
 University of Oklahoma  
-*Research Focus: AI for Healthcare Applications*
+*Research Focus: AI/ML application in Bioinformatics*
 
 **M.Eng. in Computer Science** (2024)  
 Cornell University  
-*GPA: 3.9/4.0*
 
 **B.S. in Computer Science** (2023)  
 Hofstra University  
-*Summa Cum Laude, GPA: 3.96/4.0*
+*Magna Cum Laude, Departmental honors*
 
 ## Experience
 

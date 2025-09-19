@@ -46,7 +46,7 @@ Cornell University | 2023 - 2024
 
 ---
 
-### Publications
+### Paper submitted to journals
 
 1. **T.H.H. Pham**, et al. (2025). "Schizophrenia versus Healthy Controls Classification based on fMRI 4D Spatiotemporal Data." *SPIE Medical Imaging Conference*.
 
