@@ -17,13 +17,10 @@ repository: "HuanPham5/HuanPham5.github.io"
 author:
   name: "Tieu Hoang Huan Pham"
   avatar: "/assets/images/avatar.jpg" # Add your photo
-  bio: "PhD Student in Computer Science at University of Oklahoma. Specializing in AI for healthcare, neuroimaging analysis, and medical education."
+  bio: "PhD Student @ MoussaLab. Specializing in applying AI/ML to single cell genomics."
   location: "Norman, OK"
   email: "pham0226@ou.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:pham0226@ou.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/tieu-hoang-huan-pham-627a71254"
